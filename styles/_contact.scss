@@ -1,0 +1,127 @@
+$red: #CF1616;
+$brown: #F4A460;
+
+
+.form-container {
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #EFD6B4;
+    margin-bottom: 20px;
+    .form__first-page, #form-first-page {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        height: 80vh;
+        input {
+            width: 50%;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            padding: 5px;
+            background-color: #f0f0f0;
+            opacity: .8;
+            border: none;
+        }
+        input:focus {
+            outline: none;
+        }
+        .title {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+    }
+    .form__second-page, #form-second-page {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 80vh;
+        justify-content: center;
+        margin: 0 auto;
+        padding-top: 80px;
+        display: none;
+        .art-section {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            .title {
+                font-size: 30px;
+                margin-bottom: 20px;
+            }
+            input {
+                width: 70%;
+                height: 250px;
+                margin-top: 10px;
+                opacity: .8;
+                border: none;
+            }
+            input:focus {
+                outline: none;
+            }
+        }
+        .upload-section {
+            display: flex;
+            flex-direction: column;
+            label {
+                margin-top: 62px;
+            }
+            .btn {
+                height: 30px;
+                width: 100px;
+                background-color: $brown;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 50px;
+                border-radius: 2px;
+                cursor: pointer;
+            }
+            p {
+                font-size: 12px;
+                margin-top: 5px;
+            }
+        }
+    }
+    .form__third-page, #form-third-page {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        height: 80vh;
+        display: none;
+        .title {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        p {
+            max-width: 400px;
+            margin-bottom: 30px;
+        }
+        a {
+            text-decoration: none;
+            color: $red;
+            font-size: 20px;
+        }
+    }
+    .arrow-controls {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        margin: 0 auto;
+        justify-content: space-between;
+        .previous-arrow__arrow, .next-arrow__arrow {
+            font-size: 25px;
+            cursor: pointer;
+        }
+        .next-arrow__arrow {
+            transform: rotateY(180deg);
+        }
+        .no-show {
+            opacity: 0;
+        }
+    }
+}

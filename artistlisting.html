@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Oswald&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Artist Listing</title>
+</head>
+<body>
+    <article>
+        <header style="background-color: #EFD6B4;">
+            <nav>
+                <div><a class="logo" href="index.html">tlg</a></div>
+                <div class="toggle-menu">Menu</div>
+                <ul class="the-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="artistlisting.html">Artists</a></li>
+                    <li><a href="">Exhibitions</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul> 
+                <div class="arrow">&#8592;</div>
+            </nav>
+        </header>
+        <section class="jumbotron">
+            <p class="title">LEGACY ARTISTS</p>
+            <p>Your next favourite artist probably lives on this page. Find them below...</p>
+        </section>
+        <section class="artists-listing__container">
+            <div class="artists-listing__grid">
+                <div class="artist">
+                    <div class="img-contain">
+                        <a href="artist.html"><img src="./img/art6.jpg" alt=""></a>
+                    </div>
+                    <p class="name">Artist Name</p>
+                </div>
+                <div class="artist">
+                    <div class="img-contain">
+                       <a href="artist.html"><img src="./img/art12.jpg" alt=""></a>
+                    </div>
+                    <p class="name">Artist Name</p>
+                </div>
+                <div class="artist">
+                    <div class="img-contain">
+                        <a href="artist.html"><img src="./img/art5.jpg" alt=""></a>
+                    </div>
+                    <p class="name">Artist Name</p>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+        </section>
+    </article>
+    <script src="script.js"></script>
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal(".jumbotron .title", {
+            duration: 1000,
+            origin: "left",
+            distance: "20px"
+        })
+        sr.reveal(".jumbotron p", {
+            duration: 1000,
+            delay: "500",
+            origin: "bottom",
+        })
+    </script>
+</body>
+</html>

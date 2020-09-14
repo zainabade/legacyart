@@ -1,0 +1,57 @@
+$red: #CF1616;
+$brown: #F4A460; 
+
+.jumbotron {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 100px;
+    background-color: #EFD6B4;
+    height: 40vh;
+    .title {
+        font-size: 50px;
+        margin-bottom: 30px;
+        font-family: 'Montserrat', sans-serif;
+        color: #333;
+    }
+    p {
+        font-size: 18px;
+        font-family: "Monserrat", sans-serif;
+    }
+}
+.artists-listing__container {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .artists-listing__grid {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: repeat(autofit, minmax(300px, 1fr));
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-end;
+        margin-bottom: 50px;
+        .artist {
+            .img-contain {
+                max-width: 300px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    a {
+        margin-bottom: 50px;
+        text-decoration: none;
+        color: $red;
+        font-size: 20px;
+    }
+}

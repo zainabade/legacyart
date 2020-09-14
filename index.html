@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Oswald&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Welcome to Legacy</title>
+</head>
+<body>
+    <article>
+        <header>
+            <nav>
+                <div><a class="logo" href="">tlg</a></div>
+                <div class="toggle-menu">Menu</div>
+                <ul class="the-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="artistlisting.html">Artists</a></li>
+                    <li><a href="">Exhibitions</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul> 
+                <div class="arrow">&#8592;</div>
+            </nav>
+        </header>
+        <section class="landing">
+            <div class="img-bg"></div>
+            <div class="heading">
+                <div class="title">THE <span>LEGACY</span> GALLERY</div>
+                <p>Artists. Your masterwork speaks for itself. We are here to show it off for you, and give you the <span id="word-to-change">LEGACY</span> you deserve. </p>
+                <div class="btn"> <a href="contact.html">Join our Legacy</a></div>
+            </div>
+        </section>
+        <section class="art-title">
+            <p class="title">Your chance to <span>EXPERIENCE</span> art</p>
+            <p>We believe art should be an experience. That's right, a 360 degree experience. Browse through our digital gallery carefully crafted for each of the talented artists we represent.</p>
+        </section>
+        <section class="artist-3d" style="background-color: #fff; min-height: 90vh;">
+            <div class="box">
+                <span style="--i:1;"><img src="./img/art1.jpg" width="400px" alt=""></span>
+                <span style="--i:2;"><img src="./img/art2.jpg" width="400px" style="max-height: 200px;" alt=""></span>
+                <span style="--i:3;"><img src="./img/art3.jpg" width="400px" alt=""></span>
+                <span style="--i:4;"><img src="./img/art4.jpg" width="400px" style="min-height: 200px;" alt=""></span>
+                <span style="--i:5;"><img src="./img/art6.jpg" width="400px alt=""></span>
+            </div>
+        </section>
+        <section class="landing-2nd">
+            <div class="heading-2nd">
+                <p class="title">For the art lovers...</p>
+                <p>We're talking to you, art enthusiasts. The Legacy Gallery is home to hundreds of talented artists. Their <span class="word-to-change">LEGACY</span> is undeniable</p>
+                <div class="btn"> <a href="artistlisting.html">Find your next art obsession</a></div>
+            </div>
+            <div class="img-bg"></div>
+        </section>
+        <section class="footer">
+        </section>
+    </article>
+
+    <script src="script.js"></script>
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal(".img-bg", {
+            duration: 1000,
+            origin: "left",
+            distance: "20px"
+        })
+        sr.reveal(".btn", {
+            duration: 2000,
+            delay: "500",
+            origin: "bottom",
+        })
+        sr.reveal(".heading", {
+            duration: 1000,
+            origin: "left",
+            distance: "10px"
+        })
+        sr.reveal(".heading-2nd", {
+            duration: 1000,
+            origin: "bottom",
+            distance: "20px",
+            viewFactor: 0.2,
+        })
+    </script>
+</body>
+</html>
